@@ -1,4 +1,18 @@
 # main links
 main:
-  - title: "Hello World"
-    url: /hello-world/
+  - title: "About"
+    url: /about/
+  - title: "Career"
+    url: /career/
+  - title: "Resume"
+    url: /resume/
+  - title: "Projects"
+    url: /projects/
+  - title: "Mechanical"
+    url: /mechanical/
+  - title: "Music"
+    url: /music/
+  - title: "Notes"
+    url: /notes/
+  - title: "Contact"
+    url: /contact/

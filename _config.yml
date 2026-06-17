@@ -1,23 +1,34 @@
 # Site Settings
 title: "Bruno Batarelo"
 name: "Bruno Batarelo"
-description: "Bruno Batarelo's personal website."
+description: "Senior Scala/backend engineer transitioning toward Rust, with deep experience in distributed systems, domain modeling, and production software."
 url: "https://bruno.batarelo.net"
 baseurl: ""
 
 # Build Settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# SEO
+twitter:
+  username: ""
+og_image: /assets/images/bio-photo.jpg
 
 # Site Author
 author:
   name: "Bruno Batarelo"
-  bio: ""
+  bio: "Senior Scala/backend engineer → Rust. Distributed systems, domain modeling, production software. Motorcycle suspension, machining, and music on the side."
   location: "Croatia"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/brunobt"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/brunobatarelo"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:bruno@batarelo.net"
 
 # Reading Files
 include:

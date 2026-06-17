@@ -1,4 +1,44 @@
 ---
 layout: home
 author_profile: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.4"
+  overlay_image: /assets/images/header.jpg
+excerpt: >
+  Senior Scala/backend engineer transitioning toward Rust, with deep experience
+  in distributed systems, domain modeling, and production software.
+  Outside software, I work on motorcycle suspension, machining,
+  mechanical components, and music.
+intro:
+  - excerpt: >
+      I build backend systems that have to work under pressure — at scale, in
+      production, for years. Currently deepening my Rust practice after a long
+      career in Scala and distributed systems.
+feature_row:
+  - image_path: /assets/images/feature-software.jpg
+    alt: "Software"
+    title: "Software"
+    excerpt: "Distributed systems, domain modeling, Scala, Rust, production engineering."
+    url: /projects/
+    btn_label: "Projects"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/feature-mechanical.jpg
+    alt: "Mechanical"
+    title: "Mechanical"
+    excerpt: "Motorcycle suspension, machining, fabrication, and mechanical engineering work."
+    url: /mechanical/
+    btn_label: "Mechanical"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/feature-music.jpg
+    alt: "Music"
+    title: "Music"
+    excerpt: "Band and musical background — playing, recording, and performing."
+    url: /music/
+    btn_label: "Music"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}

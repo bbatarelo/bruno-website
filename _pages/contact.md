@@ -1,0 +1,23 @@
+---
+title: "Contact"
+permalink: /contact/
+layout: single
+author_profile: true
+---
+
+The best way to reach me is by email:
+**[bruno@batarelo.net](mailto:bruno@batarelo.net)**
+
+I'm open to conversations about:
+- Senior backend or systems engineering roles (Scala, Rust, distributed systems)
+- Technical collaboration or consulting
+- Anything suspension, machining, or mechanical engineering related
+- Music
+
+I'm not interested in recruiter cold-outreach for roles that have nothing to do
+with my background. If you've read this far, you probably aren't that person.
+
+---
+
+**GitHub:** [github.com/brunobt](https://github.com/brunobt)  
+**LinkedIn:** [linkedin.com/in/brunobatarelo](https://linkedin.com/in/brunobatarelo)
