@@ -1,46 +1,54 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+author_profile: false
+excerpt: "Senior backend engineer working with Scala, distributed systems, and Rust-oriented systems software."
 header:
   overlay_color: "#000"
-  overlay_filter: "0.4"
+  overlay_filter: "0.5"
   overlay_image: /assets/images/header.jpg
-excerpt: "Senior Scala / backend / distributed-systems engineer transitioning toward Rust, with a broader engineering background spanning software, embedded systems, mechanical work, and product development."
-intro:
-  - excerpt: >
-      I am a senior software engineer with a background in Scala, distributed backend systems,
-      production architecture, and engineering leadership. I am currently focusing on Rust
-      as a natural next step toward reliable, explicit, performance-conscious systems programming.
-
-
-      Outside pure software, I work on mechanical and embedded engineering projects —
-      motorcycle suspension servicing and tuning, CNC machining, electronics, and audio/MIDI tools.
-      I like systems that have to work in the real world, whether that means production backend services,
-      hardware interfaces, or mechanical components under load.
+  actions:
+    - label: "Resume"
+      url: /resume/
+    - label: "Projects"
+      url: /projects/
 feature_row:
-  - image_path: /assets/images/feature-software.jpg
-    alt: "Software"
-    title: "Software"
-    excerpt: "Distributed systems, domain modeling, Scala, Rust, production engineering."
+  - title: "Software Systems"
+    excerpt: "Distributed backends, Scala, Rust, production systems, domain modeling, and architecture."
     url: /projects/
-    btn_label: "Projects"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/feature-mechanical.jpg
-    alt: "Mechanical & Embedded"
-    title: "Mechanical & Embedded"
-    excerpt: "Motorcycle suspension, CNC machining, electronics, and audio/MIDI tools."
-    url: /mechanical/
-    btn_label: "Mechanical"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/feature-music.jpg
-    alt: "Music"
-    title: "Music"
-    excerpt: "Band and musical background — playing, recording, and performing."
+    btn_label: "View projects →"
+    btn_class: "btn--inverse"
+  - title: "Workshop Engineering"
+    excerpt: "Motorcycle suspension, CNC machining, electronics, measurement, and tooling."
+    url: /workshop/
+    btn_label: "Workshop notes →"
+    btn_class: "btn--inverse"
+  - title: "Audio & Music"
+    excerpt: "Band work, recording, MIDI, live-performance tools, and audio experiments."
     url: /music/
-    btn_label: "Music"
-    btn_class: "btn--primary"
+    btn_label: "Music & audio →"
+    btn_class: "btn--inverse"
 ---
 
-{% include feature_row id="intro" type="center" %}
+<section class="home-subhero">
+  <p>I build reliable software and practical engineering systems — across software, embedded, mechanical, and audio domains.</p>
+</section>
+
+<section class="home-about">
+  <h2>About</h2>
+  <p>I am a senior software engineer with a background in Scala, distributed backend systems, production architecture, and engineering leadership. I am currently focusing on Rust as a natural next step toward reliable, explicit, performance-conscious systems programming.</p>
+  <p>Outside pure software, I work on practical engineering projects: motorcycle suspension servicing and tuning, CNC machining, electronics, and audio/MIDI tools. I like systems that must work in the real world, whether that means backend services, hardware interfaces, or mechanical components under load.</p>
+</section>
+
+<section class="home-areas">
+  <h2>Areas</h2>
+</section>
 
 {% include feature_row %}
+
+<section class="home-contact">
+  <span>📍 Croatia</span>
+  <a href="mailto:bruno@batarelo.net">Email</a>
+  <a href="https://github.com/brunobt" target="_blank">GitHub</a>
+  <a href="https://linkedin.com/in/brunobatarelo" target="_blank">LinkedIn</a>
+  <a href="/resume/">Resume</a>
+</section>

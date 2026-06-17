@@ -1,15 +1,11 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
   - title: "Career"
     url: /career/
-  - title: "Resume"
-    url: /resume/
   - title: "Projects"
     url: /projects/
-  - title: "Mechanical"
-    url: /mechanical/
+  - title: "Workshop"
+    url: /workshop/
   - title: "Music"
     url: /music/
   - title: "Notes"

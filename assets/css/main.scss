@@ -6,3 +6,69 @@
 
 @import "minimal-mistakes/skins/default"; // skin
 @import "minimal-mistakes"; // main partials
+
+// ─── Homepage sections ──────────────────────────────────────────────────────
+
+.home-subhero {
+  padding: 2em 0 0;
+  font-size: 1.15em;
+  color: #555;
+  font-style: italic;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 2em;
+  margin-bottom: 0;
+
+  p {
+    margin: 0;
+    max-width: 760px;
+  }
+}
+
+.home-about {
+  padding: 2.5em 0;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0.6em;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888;
+  }
+
+  p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    max-width: 760px;
+    margin-bottom: 1em;
+  }
+}
+
+.home-areas {
+  padding-top: 0.5em;
+  padding-bottom: 0;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888;
+  }
+}
+
+.home-contact {
+  padding: 2.5em 0;
+  border-top: 1px solid #e8e8e8;
+  font-size: 0.95em;
+
+  span, a {
+    margin-right: 2em;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

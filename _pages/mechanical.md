@@ -1,6 +1,6 @@
 ---
-title: "Mechanical"
-permalink: /mechanical/
+title: "Workshop"
+permalink: /workshop/
 layout: single
 author_profile: true
 toc: true
@@ -25,15 +25,31 @@ Current and past work includes:
 - Spring selection and preload calculation
 - Damping setup and tuning methodology
 - Geometry changes and their effects on handling balance
+- Fork and shock servicing
 
 ---
 
-## Machining
+## CNC Machining
 
 Access to a lathe and mill means that when the right part doesn't exist, you
 make it. Work has included custom suspension components, brackets, adapters,
-and anything else that requires tighter tolerances than a welder with a grinder
-can provide.
+and anything else that requires tighter tolerances than a grinder can provide.
+
+---
+
+## Electronics & Embedded Systems
+
+Hardware interfaces, microcontrollers, sensors — systems that sit between
+software and the physical world. Interested in the full stack from firmware
+to the mechanical actuator it controls.
+
+---
+
+## Audio / MIDI Tools
+
+Building tools around musical workflow and signal processing — custom MIDI
+controllers, audio routing, and live-performance tools where off-the-shelf
+solutions don't fit the use case.
 
 ---
 
