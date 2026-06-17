@@ -5,34 +5,45 @@ layout: single
 author_profile: true
 ---
 
-I'm a senior software engineer based in Croatia with a long career in backend
-systems — primarily Scala, distributed systems, and domain modeling for
-production-grade software.
+I am a senior software engineer with a background in Scala, distributed backend
+systems, production architecture, and engineering leadership. I am currently
+focusing on **Rust** as a natural next step toward reliable, explicit,
+performance-conscious systems programming.
 
-Over the years I've worked on platforms where correctness, performance, and
-long-term maintainability actually matter: financial systems, real-time data
-pipelines, and services handling significant load.
+My career has been built around systems that have to work in production under
+real conditions — financial platforms, real-time data pipelines, event-driven
+architectures, services at scale. Strong typing and explicit domain modeling
+aren't aesthetic preferences for me; they're tools for building software that
+can be reasoned about and changed without fear.
 
-Right now I'm in a deliberate transition toward **Rust**. Not as a trend, but
-because after years of working in JVM ecosystems I want the kind of control,
-safety guarantees, and performance characteristics that Rust offers — especially
-for systems-level work and anything close to the metal.
-
----
-
-Outside of software, I'm probably either:
-
-- Tearing apart a motorcycle suspension linkage and dialing in geometry
-- Running a lathe or mill on something that should not require a machine shop but somehow does
-- Playing guitar in a band, badly or not depending on the rehearsal
-
-I don't keep these things separate. The same instincts that make me want to
-understand exactly what a type system is guaranteeing also make me want to
-understand why a suspension link ratio behaves the way it does at full
-compression.
+The move toward Rust is a continuation of that instinct: tighter control over
+what the program is actually doing, failure modes that are visible at compile
+time, and performance characteristics that don't require tuning a garbage
+collector.
 
 ---
 
-If you want the professional summary, see the [resume](/resume/).  
-If you want the full story, see [career](/career/).  
-If you want to talk, see [contact](/contact/).
+Outside pure software, I work on mechanical and embedded engineering projects:
+
+- **Motorcycle suspension** — servicing, tuning, linkage geometry, spring and
+  damping setup. The kind of work where you have to understand the whole system
+  to get any part of it right.
+- **CNC machining** — lathe and mill work, making parts that need to be right
+  rather than close enough.
+- **Electronics and embedded systems** — hardware interfaces, microcontrollers,
+  systems that sit between software and the physical world.
+- **Audio / MIDI tools** — building tools around musical workflow and signal
+  processing.
+- **Music** — playing guitar in a band context, long enough that it's just part
+  of how I spend time.
+
+I like systems that have to work in the real world — whether that means
+production backend services, hardware interfaces, or mechanical components
+under load. The common thread is an interest in understanding what's actually
+happening rather than treating it as a black box.
+
+---
+
+For the professional summary: [resume](/resume/)  
+For the full career story: [career](/career/)  
+To get in touch: [contact](/contact/)

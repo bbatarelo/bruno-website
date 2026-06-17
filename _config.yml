@@ -1,7 +1,7 @@
 # Site Settings
 title: "Bruno Batarelo"
 name: "Bruno Batarelo"
-description: "Senior Scala/backend engineer transitioning toward Rust, with deep experience in distributed systems, domain modeling, and production software."
+description: "Senior Scala/backend engineer transitioning toward Rust. Distributed systems, production architecture, and engineering leadership — plus mechanical, embedded, and audio/MIDI work."
 url: "https://bruno.batarelo.net"
 baseurl: ""
 
@@ -17,7 +17,7 @@ og_image: /assets/images/bio-photo.jpg
 # Site Author
 author:
   name: "Bruno Batarelo"
-  bio: "Senior Scala/backend engineer → Rust. Distributed systems, domain modeling, production software. Motorcycle suspension, machining, and music on the side."
+  bio: "Senior Scala / backend / distributed-systems engineer transitioning toward Rust, with a broader engineering background spanning software, embedded systems, mechanical work, and product development."
   location: "Croatia"
   links:
     - label: "GitHub"
