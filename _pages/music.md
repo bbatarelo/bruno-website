@@ -2,7 +2,6 @@
 title: "Music"
 permalink: /music/
 layout: single
-author_profile: true
 ---
 
 Music has been a constant long enough that it's just part of how I spend time,

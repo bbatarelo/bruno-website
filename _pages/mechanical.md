@@ -2,7 +2,6 @@
 title: "Workshop"
 permalink: /workshop/
 layout: single
-author_profile: true
 toc: true
 toc_label: "Topics"
 ---

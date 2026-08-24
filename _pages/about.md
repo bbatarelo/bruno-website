@@ -2,7 +2,6 @@
 title: "About"
 permalink: /about/
 layout: single
-author_profile: true
 ---
 
 I am a senior software engineer with a background in Scala, distributed backend

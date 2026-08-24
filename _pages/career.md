@@ -2,7 +2,7 @@
 title: "Career"
 permalink: /career/
 layout: single
-author_profile: true
+author_profile: false
 toc: true
 toc_label: "Timeline"
 ---

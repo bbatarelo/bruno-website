@@ -2,7 +2,6 @@
 title: "Contact"
 permalink: /contact/
 layout: single
-author_profile: true
 ---
 
 The best way to reach me is by email:
@@ -19,5 +18,5 @@ with my background. If you've read this far, you probably aren't that person.
 
 ---
 
-**GitHub:** [github.com/brunobt](https://github.com/brunobt)  
+**GitHub:** [github.com/bbatarelo](https://github.com/bbatarelo)  
 **LinkedIn:** [linkedin.com/in/brunobatarelo](https://linkedin.com/in/brunobatarelo)
