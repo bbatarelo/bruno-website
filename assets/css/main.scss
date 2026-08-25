@@ -69,3 +69,36 @@
     text-decoration: underline;
   }
 }
+
+// ─── Content width ──────────────────────────────────────────────────────────
+// Minimal Mistakes reserves the right sidebar rail twice on `single` pages:
+// `.page` gives up the rail width AND carries matching inner padding of the
+// same size. The rail is legitimate — it holds the TOC — but the inner padding
+// is dead space, and it costs another 300px, leaving body text at roughly half
+// the container while the homepage `splash` layout uses nearly all of it.
+// Reclaim the duplicated padding and keep a normal gutter instead.
+
+$content-gutter: 2.5em;
+
+.page {
+  @include breakpoint($large) {
+    padding-inline-end: $content-gutter;
+  }
+
+  @include breakpoint($x-large) {
+    padding-inline-end: $content-gutter;
+  }
+}
+
+// Pages with no sidebar at all (contact) have nothing to reserve the rail for.
+#main:not(:has(.sidebar__right)):not(:has(.sidebar)) .page {
+  @include breakpoint($large) {
+    width: 100%;
+    padding-inline-end: 0;
+  }
+
+  @include breakpoint($x-large) {
+    width: 100%;
+    padding-inline-end: 0;
+  }
+}
