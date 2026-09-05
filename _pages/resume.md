@@ -79,9 +79,9 @@ For the longer version, see [Career](/career/).
 ### Quantum bit d.o.o. — Founder
 **Jun 2014 – present**
 
-- Croatian software company: contract engineering, mostly for the US market,
-  alongside internal R&D in electronics and collaboration with academic
-  institutions.
+- Croatian software company — [quantum-bit.net](https://quantum-bit.net/) —
+  contract engineering, mostly for the US market, alongside internal R&D in
+  electronics and collaboration with academic institutions.
 - The vehicle for my independent and contract work, including the current
   Flaminem engagement.
 

@@ -111,10 +111,10 @@ CTO, but it isn't trading — and a decade of running a real platform for real
 customers taught me considerably more about backend engineering than the title
 does.
 
-**Quantum bit** — my own company, founded in 2014 and still the vehicle for my
-independent and contract work. Contract engineering largely for the US market,
-plus internal R&D in electronics and some collaboration with academic
-institutions.
+**[Quantum bit](https://quantum-bit.net/)** — my own company, founded in 2014
+and still the vehicle for my independent and contract work. Contract
+engineering largely for the US market, plus internal R&D in electronics and
+some collaboration with academic institutions.
 
 Founding things taught me the difference between an architecture that is correct
 and one that a small team can actually finish.

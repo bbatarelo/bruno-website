@@ -19,4 +19,5 @@ with my background. If you've read this far, you probably aren't that person.
 ---
 
 **GitHub:** [github.com/bbatarelo](https://github.com/bbatarelo)  
-**LinkedIn:** [linkedin.com/in/bruno-batarelo-271a869](https://www.linkedin.com/in/bruno-batarelo-271a869/)
+**LinkedIn:** [linkedin.com/in/bruno-batarelo-271a869](https://www.linkedin.com/in/bruno-batarelo-271a869/)  
+**Quantum bit:** [quantum-bit.net](https://quantum-bit.net/)
