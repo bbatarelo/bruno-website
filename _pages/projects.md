@@ -25,6 +25,39 @@ below is the most complete thing to come out of that so far.
 
 ## Past & Ongoing
 
+### E-MU USB Audio Interface Driver for Apple Silicon
+
+*macOS audio drivers, USB protocol work, real-time systems — ongoing*
+
+E-MU dropped macOS support in 2011, and their last driver was a kernel extension
+— which will not load on Apple Silicon at all. The hardware has been silent on
+modern Macs for years. This started as a way to get one Tracker Pre making sound
+again and turned into a userspace driver for the wider CA0189 family. The
+Tracker Pre and the 0404 USB are both verified on real hardware: playback and
+capture at all six sample rates from 44.1 up to 192 kHz, volume and mute,
+several interfaces published and streamed independently, and the 0404's DIN MIDI
+ports exposed as ordinary CoreMIDI endpoints. No kernel extension, no system
+extension, no disabling SIP.
+
+It is a Core Audio HAL plug-in that talks to the hardware over USB through
+IOKit, handling isochronous streaming, clock recovery and format conversion
+itself. The central design constraint is that the *device's* clock, not the
+computer's, decides how fast audio moves — so capture runs even when only
+playback is wanted, because the capture stream is how the driver measures what
+the hardware is actually doing. A lock-free ring buffer is the join between the
+two clock domains. Most of the work was protocol archaeology: USB descriptor
+and packet captures for each sample rate are committed alongside the code.
+
+The recurring lesson is that "the USB transfer succeeded" and "the audio is
+correct" are entirely different statements, which is why the project grew an
+analogue loopback test bench before it grew features. It also stopped being a
+solo project early: David Nadlinger arrived with an 0404, better diagnostics and
+the MIDI work, and pushed it well past the original goal.
+
+[Read the full write-up →]({{ '/projects/emu-apple-silicon/' | relative_url }})
+
+[github.com/bbatarelo/emu-apple-silicon](https://github.com/bbatarelo/emu-apple-silicon)
+
 ### Motorcycle Traction-Control Research Platform
 
 *Embedded systems, real-time signal handling, automotive electronics — 2017*
@@ -50,30 +83,8 @@ was treated as the first milestone, ahead of any deliberate intervention.
 ## GitHub
 
 Most of my public code lives at
-[github.com/bbatarelo](https://github.com/bbatarelo). The two below are the ones
-worth reading.
-
-### E-MU Tracker Pre Driver for Apple Silicon
-
-*macOS audio drivers, USB protocol work, real-time systems — ongoing*
-
-E-MU dropped macOS support in 2011, and their last driver was a kernel extension
-— which will not load on Apple Silicon at all. The hardware has been silent on
-modern Macs for years. This is a working userspace driver that brings it back:
-playback and capture at all six sample rates the device supports, from 44.1 up
-to 192 kHz, with the interface appearing in System Settings like any other.
-No kernel extension, no system extension, no disabling SIP.
-
-It is a Core Audio HAL plug-in that talks to the hardware over USB through
-IOKit, handling isochronous streaming, clock recovery and format conversion
-itself. The central design constraint is that the *device's* clock, not the
-computer's, decides how fast audio moves — so capture runs even when only
-playback is wanted, because the capture stream is how the driver measures what
-the hardware is actually doing. A lock-free ring buffer is the join between the
-two clock domains. Most of the work was protocol archaeology: USB descriptor
-and packet captures for each sample rate are committed alongside the code.
-
-[github.com/bbatarelo/emu-apple-silicon](https://github.com/bbatarelo/emu-apple-silicon)
+[github.com/bbatarelo](https://github.com/bbatarelo) — including the E-MU
+driver above. This is the other one worth reading.
 
 ### onset-matcher
 

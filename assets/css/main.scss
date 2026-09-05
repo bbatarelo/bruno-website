@@ -102,3 +102,66 @@ $content-gutter: 2.5em;
     padding-inline-end: 0;
   }
 }
+
+// ─── Homepage hero photo ────────────────────────────────────────────────────
+// Purely decorative, so it lives in CSS rather than in markup: the splash hero
+// is rendered by the theme's `page__hero` include, and this needs no alt text.
+//
+// It hangs off the hero `.wrapper`, whose border box matches `#main`'s (same
+// max-width, same box-sizing), so pinning the photo `1em` from the wrapper's
+// inline end lands its right edge exactly on the right edge of the body text
+// in the white section below.
+//
+// The photo bleeds the full height of the black band, so its only free edge is
+// the inline-start one facing the text. The black gradient layered over that
+// edge is the same colour as the hero background, so the photo dissolves into
+// it instead of reading as a pasted rectangle.
+
+// Fixed px rather than em: the root font-size steps up at every breakpoint, so
+// an em-sized photo would balloon on wide screens and swamp the hero. 500px is
+// also the floor at which `cover` still keeps both figures inside the frame,
+// which is why the photo only appears from $x-large up — below that the column
+// is too narrow to give it that width without squeezing the lead.
+$hero-photo-width: 500px;
+$hero-photo-gap: 2em; // breathing room between the text and the photo
+$hero-photo-bleed: 3em; // the hero's own block padding — the photo eats through it
+
+// How far the black blends in over the photo's inline-start edge, as a share of
+// its width. `0` drops the gradient and leaves a hard edge.
+$hero-photo-fade-inline: 3%;
+
+.page__hero--overlay {
+  @include breakpoint($x-large) {
+    .wrapper {
+      position: relative;
+      min-height: 260px;
+      padding-inline-end: calc(#{$hero-photo-width} + #{$hero-photo-gap});
+
+      // The trailing paragraph margin collapses out of the wrapper and pads the
+      // hero from underneath; drop it so the photo can sit flush on the bottom
+      // edge of the black band.
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .wrapper::after {
+      content: "";
+      position: absolute;
+      inset-block: -$hero-photo-bleed; // span the black band edge to edge
+      inset-inline-end: 1em;
+      width: $hero-photo-width;
+      $photo: url("/assets/images/home-hero-photo.jpg");
+
+      @if $hero-photo-fade-inline != 0 {
+        background-image: linear-gradient(to right, #000, rgba(0, 0, 0, 0) $hero-photo-fade-inline), $photo;
+      } @else {
+        background-image: $photo;
+      }
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.92;
+    }
+  }
+}

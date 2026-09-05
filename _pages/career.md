@@ -169,11 +169,6 @@ engineering leadership is not greenfield. It's inheriting a system, understandin
 why it is the way it is, keeping it running for the people who depend on it, and
 making it better without pretending you can start over.
 
-I don't lead by committee, and I don't lead by dictate. The goal is to get to the
-right answer faster by having the right people thinking clearly about the right
-things — and to be the one who makes the call when there genuinely isn't an
-obvious right answer.
-
 ---
 
 ## Toward Rust
