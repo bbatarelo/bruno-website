@@ -12,7 +12,7 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 # SEO
 twitter:
   username: ""
-og_image: /assets/images/bio-photo.jpg
+og_image: /assets/images/home-hero-photo.jpg
 
 # Site Author
 author:
