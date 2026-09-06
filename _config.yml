@@ -2,7 +2,7 @@
 title: "Bruno Batarelo"
 name: "Bruno Batarelo"
 description: "Senior Scala/backend engineer transitioning toward Rust. Distributed systems, production architecture, and engineering leadership — plus mechanical, embedded, and audio/MIDI work."
-url: "https://bruno.batarelo.net"
+url: "https://batarelo.net"
 baseurl: ""
 
 # Build Settings
@@ -46,6 +46,7 @@ exclude:
   - _site
   - README.md
   - LICENSE
+  - CONTEXT.md
 
 # Conversion
 markdown: kramdown

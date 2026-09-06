@@ -9,7 +9,7 @@ This document captures all design decisions, current state, and conventions so w
 **Type:** Jekyll static site  
 **Theme:** [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) (`minimal-mistakes-jekyll` gem)  
 **Skin:** `default` (set in `assets/css/main.scss`)  
-**Hosted at:** `https://bruno.batarelo.net` (GitHub Pages or similar, CNAME set)  
+**Hosted at:** `https://batarelo.net` (GitHub Pages or similar, CNAME set)  
 **Ruby version:** see `.ruby-version`  
 **Dev server:** `bundle exec jekyll serve` → `localhost:4000`
 
@@ -78,7 +78,7 @@ assets/css/main.scss        # Custom CSS on top of Minimal Mistakes
 assets/images/projects/motorcycle-tc-platform/   # Scope captures for the TC platform write-up
 Gemfile                     # Ruby deps
 .ruby-version               # Ruby version pin
-CNAME                       # bruno.batarelo.net
+CNAME                       # batarelo.net
 ```
 
 ---
