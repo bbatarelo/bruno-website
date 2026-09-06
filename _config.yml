@@ -30,6 +30,13 @@ author:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:bruno@batarelo.net"
 
+# Analytics — Cloudflare Web Analytics. The theme only emits this when
+# jekyll.environment == "production", so local `jekyll serve` sends nothing.
+# Set `analytics: false` in a page's front matter to exclude that page.
+analytics:
+  provider: "custom"
+  tracking_id: "8a96049e0dfa4c8dbc0203474803f8e3"
+
 # Reading Files
 include:
   - .htaccess
