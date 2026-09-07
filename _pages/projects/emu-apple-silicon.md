@@ -82,11 +82,11 @@ A driver that reports that it moved the right number of USB bytes is not necessa
 
 Doing that by constantly rearranging cables got old very quickly.
 
-So, naturally, a small mixer joined the setup.
+So a small mixer I already had was drafted into the setup.
 
 <figure>
   <img src="{{ '/assets/images/projects/emu-apple-silicon/test-bench-with-mixer.jpg' | relative_url }}" alt="The interface rack standing behind a small mixer, coloured patch cables running from each interface into mixer channels labelled MOTU M4, Tracker Pre and 0404">
-  <figcaption>The current test bench. By this point the "small driver experiment" had acquired a rack, three interfaces, a mixer and dedicated loopback wiring.</figcaption>
+  <figcaption>The current test bench. By this point the "small driver experiment" had acquired a rack, three interfaces and dedicated loopback wiring, and retrieved an old mixer from storage.</figcaption>
 </figure>
 
 This is a pattern in my life: if I become interested enough in a project, it tends to acquire tools, fixtures, cables and test equipment until the original problem looks suspiciously like a small laboratory.
@@ -125,7 +125,7 @@ So this is now a small but very satisfying example of **old hardware, modern AI 
 
 If this story ever travels beyond the small E-MU corner of the Internet, the one-line version is probably this: **a developer in Croatia used AI to help revive a discontinued E-MU audio interface on Apple Silicon, published the work, and an open-source collaborator helped turn the experiment into something much bigger.**
 
-A perfectly good audio interface gets another life. A small group of E-MU owners gets to keep using hardware they like. And I somehow ended up with three audio interfaces, a mixer, a 3D-printed rack and a lot more USB knowledge than I had planned to acquire.
+A perfectly good audio interface gets another life. A small group of E-MU owners gets to keep using hardware they like. And I somehow ended up with three audio interfaces, a 3D-printed rack, a mixer repurposed as test gear and a lot more USB knowledge than I had planned to acquire.
 
 As usual, things escalated.
 
