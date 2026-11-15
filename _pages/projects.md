@@ -18,12 +18,51 @@ than a list of technologies used.
 
 Working through systems-level problems in Rust: async runtimes, ownership
 patterns, building small services with axum/Tokio, and exploring the type system
-as a design tool rather than just a safety net. [onset-matcher](#onset-matcher)
-below is the most complete thing to come out of that so far.
+as a design tool rather than just a safety net. That exploration now includes
+audio drivers for Apple Silicon and [onset-matcher](#onset-matcher), an audio
+analysis and test tool.
 
 ---
 
 ## Past & Ongoing
+
+### M-Audio Fast Track Ultra Driver for Apple Silicon
+
+*macOS audio drivers, Rust, USB streaming, latency — ongoing*
+
+After the E-MU work, I started bringing an M-Audio Fast Track Ultra back to life
+on Apple Silicon. The interface is making sound again, although the driver is
+still a work in progress. Much of the effort has gone into latency: getting
+audio through the device is one milestone; making monitoring responsive enough
+to use while playing is another. After a lot of investigation and testing, a
+recent breakthrough brought measured monitoring latency down to around 11 ms
+in my current setup.
+
+The work also led to a new project architecture and a more practical development
+workflow. Repeated Core Audio restarts can make development painful, sometimes
+ending in a full reboot. Reducing those interruptions, streamlining the
+build-and-test cycle and reducing repeated administrator-password prompts made
+remote, AI-assisted development much easier. Those improvements became a
+separate reusable project: the driver development template below.
+
+[github.com/bbatarelo/FastTrackUltra-AppleSilicon](https://github.com/bbatarelo/FastTrackUltra-AppleSilicon)
+
+### Generic Audio Driver Development Template
+
+*Apple Silicon, audio driver architecture, development tooling — ongoing*
+
+A starting point for developing audio drivers on modern Apple devices, extracted
+from the practical lessons of the Fast Track Ultra project. It brings together
+a project skeleton, shared core code and the development patterns that proved
+useful while reviving real hardware.
+
+The aim is to make the next driver easier to build and test: a clearer
+architecture, fewer disruptive restarts and reboots, and less repeated need for
+sudo passwords during routine development. It also gives remote AI-assisted
+work a more consistent foundation, so each new hardware project does not have
+to rediscover the same workflow problems.
+
+[github.com/bbatarelo/generic-audio-driver-development-template](https://github.com/bbatarelo/generic-audio-driver-development-template)
 
 ### E-MU USB Audio Interface Driver for Apple Silicon
 
@@ -83,8 +122,11 @@ was treated as the first milestone, ahead of any deliberate intervention.
 ## GitHub
 
 Most of my public code lives at
-[github.com/bbatarelo](https://github.com/bbatarelo) — including the E-MU
-driver above. This is the other one worth reading.
+[github.com/bbatarelo](https://github.com/bbatarelo), including the
+[Fast Track Ultra driver](https://github.com/bbatarelo/FastTrackUltra-AppleSilicon),
+the [audio driver development template](https://github.com/bbatarelo/generic-audio-driver-development-template)
+and the [E-MU driver](https://github.com/bbatarelo/emu-apple-silicon)
+described above. Another audio project worth a look is onset-matcher.
 
 ### onset-matcher
 
