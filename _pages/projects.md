@@ -26,6 +26,14 @@ analysis and test tool.
 
 ## Past & Ongoing
 
+### Wabeco USB Glass-Scale Reader
+
+*STM32 firmware, USB measurement, glass scales, 3D printing — reader complete; machine installation next*
+
+A three-axis reader for the glass scales that will help measure and calibrate my Wabeco mill. Built around a MikroElektronika Clicker 2 board I already owned, it streams positions and reference events over USB, displays XYZ on a small TFT, and accepts firmware updates without reconnecting a programmer. The first article covers the path from loose wires to a working enclosed instrument; mounting it on the machine comes next.
+
+[Read the project: Measuring the Wabeco, part 1]({{ '/projects/wabeco-usb-scale-reader/' | relative_url }})
+
 ### M-Audio Fast Track Ultra Driver for Apple Silicon
 
 *macOS audio drivers, Rust, USB streaming, latency — ongoing*

@@ -103,6 +103,18 @@ $content-gutter: 2.5em;
   }
 }
 
+// This photo article has no author sidebar. Reserve one rail for its sticky TOC.
+.wabeco-article .page {
+  @include breakpoint($large) {
+    width: 100%;
+    padding-inline-end: $right-sidebar-width-narrow;
+  }
+
+  @include breakpoint($x-large) {
+    padding-inline-end: $right-sidebar-width;
+  }
+}
+
 // ─── Homepage hero photo ────────────────────────────────────────────────────
 // Purely decorative, so it lives in CSS rather than in markup: the splash hero
 // is rendered by the theme's `page__hero` include, and this needs no alt text.

@@ -34,6 +34,10 @@ Access to a lathe and mill means that when the right part doesn't exist, you
 make it. Work has included custom suspension components, brackets, adapters,
 and anything else that requires tighter tolerances than a grinder can provide.
 
+I am building an independent measurement setup for my Wabeco F1410 LF-C with Centroid Acorn control. The first stage is complete: a three-axis USB glass-scale reader with a local display and USB firmware updates. Next comes mounting the scales and measuring the machine's actual travel.
+
+[Measuring the Wabeco, part 1: building the scale reader]({{ '/projects/wabeco-usb-scale-reader/' | relative_url }})
+
 ---
 
 ## Electronics & Embedded Systems
