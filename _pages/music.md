@@ -12,9 +12,8 @@ you'll hear about them here :)
 
 ## Playing
 
-Bass, primarily. Guitar, some keyboards. Band context — rehearsals, writing,
-performing. Not a session musician, not a solo project: the band format where
-the whole is supposed to be more than its parts.
+Bass, primarily. Guitar, some keyboards. Band context — primarily rehearsals. Not a session musician, not a solo project: 
+the band is a structure where the whole is supposed to be more than its parts.
 
 ---
 
@@ -31,8 +30,10 @@ template.
 
 [Reviving an E-MU Tracker Pre on Apple Silicon →]({{ '/projects/emu-apple-silicon/' | relative_url }})
 
+I am participating in a project of restoring a Firewire support in modern versions of MacOS while also reviving a RME Fireface 800 audio interface. 
+
 ---
 
 ## Background
 
-*More details on bands, recordings, and musical projects to be added here.*
+*More details on band, recordings, and musical projects will hopefully be added here once.*
